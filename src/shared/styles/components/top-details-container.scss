@@ -1,0 +1,28 @@
+.top-details-container {
+    padding: 25px 10px;
+    background-color: $lightest-blue;
+
+    .top-details-container-header {
+        font-size: 200%;
+        span {
+            padding: 5px 15px;
+        }
+    }
+
+    .top-details-container-read-only-wrapper {
+        margin-top:25px;
+        font-size: 80%;
+        span {
+            padding: 5px;
+            border-right: 1px solid $dark-gray;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+
+    .top-details-container-body {
+        margin-top:25px;
+    }
+}

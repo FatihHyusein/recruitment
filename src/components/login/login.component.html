@@ -1,0 +1,19 @@
+<div id="login" class="tcenter">
+    <div>
+        <img src="assets/logo.png" alt="logo">
+        <form class="login-form" #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+            <div class="form-group">
+                <input class="form-control" type="text" autocomplete="off"
+                       placeholder="Username" name="username" [(ngModel)]="loginForm.username" required/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" autocomplete="off"
+                       placeholder="Password" name="password" [(ngModel)]="loginForm.password" required/>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn blue">LOG IN</button>
+            </div>
+        </form>
+        <div class="tcenter white">2016 © Excitel.</div>
+    </div>
+</div>

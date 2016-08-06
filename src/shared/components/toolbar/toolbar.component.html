@@ -1,0 +1,17 @@
+<ul id="dropdown1" class="dropdown-content">
+    <li><a *ngFor="let lang of languages" (click)="changeLanguage(lang)">{{lang}}</a></li>
+</ul>
+<nav>
+    <div class="nav-wrapper">
+        <a [routerLink]="['']" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a [routerLink]="['/aoa']" routerLinkActive="active">{{'aoa' | translate}}</a></li>
+            <li><a [routerLink]="['/brigades']" routerLinkActive="active">{{'brigades' | translate}}</a></li>
+            <li><a [routerLink]="['/cantactUs']" routerLinkActive="active">{{'contactUs' | translate}}</a></li>
+            <li>
+                <a class="dropdown-button" href="#!" data-activates="dropdown1">{{selectedLanguage}}<i
+                        class="material-icons right">arrow_drop_down</i></a>
+            </li>
+        </ul>
+    </div>
+</nav>

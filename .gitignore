@@ -1,0 +1,13 @@
+.idea/
+node_modules/
+lib/
+dest/
+dist/
+.sass-cache/
+typings/
+logs/*
+!.gitkeep
+tmp
+*.buildpath
+*.project
+

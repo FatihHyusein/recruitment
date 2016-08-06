@@ -1,0 +1,42 @@
+.btn {
+    display: inline-block;
+    padding: 5px 20px !important;
+    text-align: center;
+    border-width: 0;
+    border-radius: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    font-weight: 600;
+    filter: none;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none !important;
+
+    color: #fff;
+    background-color: #45B6AF;
+
+    &:hover, &:focus, &:active, &.active {
+        color: $white;
+        background-color: #3b9c96;
+        border-color: #307f7a;
+    }
+    &:active:hover {
+        background-color: #37918b;
+    }
+
+    &.blue {
+        background-color: $light-blue;
+        &:hover, &:focus, &:active, &.active {
+            color: $white;
+            background-color: $light-blue-hover;
+        }
+        &:active:hover {
+            background-color: $light-blue-active;
+        }
+    }
+}

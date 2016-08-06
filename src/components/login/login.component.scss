@@ -1,0 +1,32 @@
+@import "../../shared/styles/variables";
+
+#login {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $dark-blue;
+
+    form {
+        padding: 20px 65px;
+        margin-bottom: 8px;
+        background-color: $medium-blue;
+
+        @media screen and (max-width: 430px) {
+            padding: 20px 0;
+        }
+    }
+
+    input {
+        min-width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        min-width: 100px;
+    }
+}

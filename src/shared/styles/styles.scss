@@ -1,0 +1,91 @@
+//@import "variables";
+//$fa-font-path: "../../../node_modules/font-awesome/fonts";
+//@import "../../../node_modules/font-awesome/scss/font-awesome";
+//
+//body {
+//    margin: 0;
+//    font-size: 16px;
+//    font-family: "Open Sans", sans-serif;
+//}
+//
+//a {
+//    &:link, &:visited {
+//        text-decoration: inherit;
+//        color: inherit;
+//        cursor: auto;
+//    }
+//}
+//
+//ul, li {
+//    margin: 0;
+//    list-style-type: none;
+//}
+//
+//ul {
+//    padding-left: 0;
+//}
+//
+//.uppercase {
+//    text-transform: uppercase !important;
+//}
+//
+.tcenter {
+    text-align: center;
+}
+//
+//.fleft {
+//    float: left;
+//}
+//
+//.fright {
+//    float: right;
+//}
+//
+//.cboth {
+//    clear: both;
+//}
+//
+//.cpointer {
+//    cursor: pointer;
+//}
+//
+//.hidden {
+//    visibility: hidden;
+//}
+//
+//.white {
+//    color: $white;
+//}
+//
+//.bg-white {
+//    background-color: $white;
+//}
+//
+//.black {
+//    color: $black;
+//}
+//
+//.bg-black {
+//    background-color: $black;
+//}
+//
+//side-nav, main {
+//    display: inline-block;
+//    vertical-align: top;
+//}
+//
+//side-nav {
+//    float: left;
+//    width: 235px;
+//    height: calc(100vh - 45px);
+//}
+//
+//main {
+//    width: calc(100% - 235px);
+//}
+//
+//@import 'components';
+////@import 'labels';
+////@import 'input-icons';
+////@import 'inputs';
+//

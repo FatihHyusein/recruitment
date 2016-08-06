@@ -1,0 +1,29 @@
+<div>
+    <div class="top-details-container">
+        <div class="top-details-container-header">
+            <span>{{route.params.value.id}}</span>
+            <span>{{ticket.title}}</span>
+            <span>
+
+            </span>
+        </div>
+
+        <div class="top-details-container-read-only-wrapper">
+            <span>{{ticket.cretionDate}}</span>
+            <span>{{ticket.creatorUsername}}</span>
+            <span>{{ticket.cretionDate}}</span>
+        </div>
+
+        <div class="top-details-container-body">
+            <div class="form-group">
+                <label for="reason2"> Reason</label>
+                <input id="reason2" type="text" class="form-control" [(ngModel)]="ticket.reason"/>
+            </div>
+
+            <div class="form-group">
+                <label for="reason"> Reason</label>
+                <input id="reason" type="text" class="form-control" [(ngModel)]="ticket.reason"/>
+            </div>
+        </div>
+    </div>
+</div>

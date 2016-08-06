@@ -1,0 +1,30 @@
+.form-control {
+    display: block;
+    width: calc(100% - 26px);
+    height: 22px;
+    padding: 6px 12px;
+    font-size: 14px;
+    outline: none;
+    color: $gray;
+    background-color: $white;
+    background-image: none;
+    border: 1px solid $gray;
+    border-radius: 0;
+    box-shadow: none;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+    &:focus, &:active {
+        border: 1px solid $dark-gray;
+    }
+}
+
+.form-group {
+    padding: 5px;
+    .form-control {
+        display: inline-block;
+        width: auto;
+    }
+    label {
+        margin-right: 30px;
+    }
+}

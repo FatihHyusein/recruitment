@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+nav {
+    height: 100%;
+    background-color: $dark-blue;
+    color: $white;
+
+    a {
+        display: block;
+
+        &.active {
+            background-color: $white;
+            color: $dark-gray;
+        }
+    }
+
+    a, & > div > div {
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    & > div > div {
+        &.active {
+            background-color: $gray;
+            ~ a {
+                display: block;
+            }
+        }
+        ~ a {
+            display: none;
+        }
+    }
+
+    div > a {
+        padding: 10px 30px;
+    }
+
+    a:hover, div > div:hover {
+        background-color: $dark-blue-x2;
+    }
+}

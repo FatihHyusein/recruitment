@@ -1,0 +1,10 @@
+<nav>
+    <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+    <a [routerLink]="['/profile']" routerLinkActive="active">Profile</a>
+
+    <div>
+        <div class="asd bsc" (click)="toggleNavGroup($event)">Ticket</div>
+        <a [routerLink]="['/tickets']" routerLinkActive="active">Tickets different</a>
+        <a [routerLink]="['/tickets']" routerLinkActive="active">Tickets different</a>
+    </div>
+</nav>

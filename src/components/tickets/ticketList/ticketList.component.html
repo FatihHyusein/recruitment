@@ -1,0 +1,41 @@
+<input type="text" class="form-control" placeholder="Search..."
+       [(ngModel)]="searchText" (ngModelChange)="search(searchText, $event)">
+
+<table class="table">
+    <thead>
+    <tr>
+        <th *ngFor="let h of headers" (click)="sort(h,$event)">
+            {{h}} <i class="fa" [ngClass]="{ 'fa-sort-asc': sortBy[h] == 'asc',
+                                             'fa-sort-desc': sortBy[h] == 'desc',
+                                             'fa-sort': sortBy[h] == undefined}"></i>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let ticket of data.tickets" (click)="showDetailsPage(ticket.ticketId)">
+        <td>
+            {{ticket.title}}
+        </td>
+        <td>
+            {{ticket.statusId}}
+        </td>
+        <td>
+            {{ticket.assignedToEmployee}}
+        </td>
+        <td>
+            {{ticket.assignedToTeam}}
+        </td>
+        <td>
+            {{ticket.closingDate}}
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<ul class="pagination">
+    <li (click)="changePage(currentPage - 1, $event)"><i class="fa fa-angle-left" aria-hidden="true"></i></li>
+    <li *ngFor="let page of pages" (click)="changePage(page, $event)" [ngClass]="{'active':page == currentPage}">
+        {{page}} {{currentPage}}
+    </li>
+    <li (click)="changePage(currentPage + 1, $event)"><i class="fa fa-angle-right"></i></li>
+</ul>
