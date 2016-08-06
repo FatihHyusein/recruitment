@@ -1,4 +1,4 @@
-# Excitel - web
+# Recruitment web site
 
 # App Features
 - Multiple languages support
